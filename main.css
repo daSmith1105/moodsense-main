@@ -1,0 +1,87 @@
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    .container {
+        width: 100vw;
+        height: 100vh;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+        justify-content: center;
+    }
+    
+    header {
+        background-color: lightgrey;
+        padding: .5em;
+        grid-row: 1;
+        grid-column: 1 / -1;
+    }
+    
+    h1 {
+        font-size: 140%;
+    }
+    
+    h2 {
+        font-size: 120%;
+    }
+    
+    .welcome {
+        grid-row: 3;
+        grid-column: 1 / -1;
+        font-size: 180%;
+    }
+    
+    .inspiration {
+        grid-row: 4;
+        grid-column: 2 / 6;
+        margin-top: 2em;
+    }
+    
+    .italics {
+        font-style: italic;
+    }
+    
+    .credit {
+        margin-top: .5em;
+    }
+    
+    .quick-mood {
+        grid-row: 6;
+        grid-column: 1 / -1;
+    }
+    
+    .mood-prompt {
+        font-size: 180%;
+        margin-bottom: 1em;
+    }
+    
+    .quick-mood-btn {
+        padding: .3em;
+        border-radius: .5em;
+        font-size: 140%;
+    }
+    
+    footer {
+        grid-row: 10;
+        grid-column: 1 / -1;
+        background-color: lightgrey;
+        padding: .5em;
+    }
+    
+    .nav-button {
+        font-size: 80%;
+        padding: .5em;
+        margin: .25em;
+        height: 100%;
+        border: none;
+        background-color: lightgrey;
+    }
+    
+    button:hover {
+        cursor: pointer;
+    }
